@@ -12,6 +12,14 @@
 		787980281E1FDDEC00E1E67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787980261E1FDDEC00E1E67C /* Main.storyboard */; };
 		7879802A1E1FDDEC00E1E67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787980291E1FDDEC00E1E67C /* Assets.xcassets */; };
 		78F5A8EA1E1FF5AE00A21BA8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */; };
+		78F5A8EC1E1FFED100A21BA8 /* TableViewPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5A8EB1E1FFED100A21BA8 /* TableViewPractiveViewController.swift */; };
+		78F5A8F31E200A1600A21BA8 /* Mountain-View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8ED1E200A1600A21BA8 /* Mountain-View.jpg */; };
+		78F5A8F41E200A1600A21BA8 /* Sacramento.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8EE1E200A1600A21BA8 /* Sacramento.jpg */; };
+		78F5A8F51E200A1600A21BA8 /* San-Jose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8EF1E200A1600A21BA8 /* San-Jose.jpg */; };
+		78F5A8F61E200A1600A21BA8 /* Los-Angeles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8F01E200A1600A21BA8 /* Los-Angeles.jpg */; };
+		78F5A8F71E200A1600A21BA8 /* San-Diego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8F11E200A1600A21BA8 /* San-Diego.jpg */; };
+		78F5A8F81E200A1600A21BA8 /* San-Francisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F5A8F21E200A1600A21BA8 /* San-Francisco.jpg */; };
+		78F5A8FB1E2016EA00A21BA8 /* WeatherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5A8FA1E2016EA00A21BA8 /* WeatherInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		787980291E1FDDEC00E1E67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7879802B1E1FDDEC00E1E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		78F5A8EB1E1FFED100A21BA8 /* TableViewPractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPractiveViewController.swift; sourceTree = "<group>"; };
+		78F5A8ED1E200A1600A21BA8 /* Mountain-View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mountain-View.jpg"; sourceTree = "<group>"; };
+		78F5A8EE1E200A1600A21BA8 /* Sacramento.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sacramento.jpg; sourceTree = "<group>"; };
+		78F5A8EF1E200A1600A21BA8 /* San-Jose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "San-Jose.jpg"; sourceTree = "<group>"; };
+		78F5A8F01E200A1600A21BA8 /* Los-Angeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Los-Angeles.jpg"; sourceTree = "<group>"; };
+		78F5A8F11E200A1600A21BA8 /* San-Diego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "San-Diego.jpg"; sourceTree = "<group>"; };
+		78F5A8F21E200A1600A21BA8 /* San-Francisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "San-Francisco.jpg"; sourceTree = "<group>"; };
+		78F5A8FA1E2016EA00A21BA8 /* WeatherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +73,27 @@
 				787980221E1FDDEC00E1E67C /* AppDelegate.swift */,
 				787980241E1FDDEC00E1E67C /* ViewController.swift */,
 				78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */,
+				78F5A8EB1E1FFED100A21BA8 /* TableViewPractiveViewController.swift */,
+				78F5A8FA1E2016EA00A21BA8 /* WeatherInfoViewController.swift */,
+				78F5A8F91E200A2E00A21BA8 /* CityImages */,
 				787980261E1FDDEC00E1E67C /* Main.storyboard */,
 				787980291E1FDDEC00E1E67C /* Assets.xcassets */,
 				7879802B1E1FDDEC00E1E67C /* Info.plist */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		78F5A8F91E200A2E00A21BA8 /* CityImages */ = {
+			isa = PBXGroup;
+			children = (
+				78F5A8ED1E200A1600A21BA8 /* Mountain-View.jpg */,
+				78F5A8EE1E200A1600A21BA8 /* Sacramento.jpg */,
+				78F5A8EF1E200A1600A21BA8 /* San-Jose.jpg */,
+				78F5A8F01E200A1600A21BA8 /* Los-Angeles.jpg */,
+				78F5A8F11E200A1600A21BA8 /* San-Diego.jpg */,
+				78F5A8F21E200A1600A21BA8 /* San-Francisco.jpg */,
+			);
+			name = CityImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +156,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F5A8F71E200A1600A21BA8 /* San-Diego.jpg in Resources */,
+				78F5A8F51E200A1600A21BA8 /* San-Jose.jpg in Resources */,
+				78F5A8F31E200A1600A21BA8 /* Mountain-View.jpg in Resources */,
+				78F5A8F61E200A1600A21BA8 /* Los-Angeles.jpg in Resources */,
 				7879802A1E1FDDEC00E1E67C /* Assets.xcassets in Resources */,
+				78F5A8F41E200A1600A21BA8 /* Sacramento.jpg in Resources */,
 				787980281E1FDDEC00E1E67C /* Main.storyboard in Resources */,
+				78F5A8F81E200A1600A21BA8 /* San-Francisco.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F5A8EC1E1FFED100A21BA8 /* TableViewPractiveViewController.swift in Sources */,
+				78F5A8FB1E2016EA00A21BA8 /* WeatherInfoViewController.swift in Sources */,
 				78F5A8EA1E1FF5AE00A21BA8 /* QuizViewController.swift in Sources */,
 				787980251E1FDDEC00E1E67C /* ViewController.swift in Sources */,
 				787980231E1FDDEC00E1E67C /* AppDelegate.swift in Sources */,
