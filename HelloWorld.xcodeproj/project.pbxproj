@@ -11,6 +11,7 @@
 		787980251E1FDDEC00E1E67C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787980241E1FDDEC00E1E67C /* ViewController.swift */; };
 		787980281E1FDDEC00E1E67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787980261E1FDDEC00E1E67C /* Main.storyboard */; };
 		7879802A1E1FDDEC00E1E67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787980291E1FDDEC00E1E67C /* Assets.xcassets */; };
+		78F5A8EA1E1FF5AE00A21BA8 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		787980271E1FDDEC00E1E67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		787980291E1FDDEC00E1E67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7879802B1E1FDDEC00E1E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				787980221E1FDDEC00E1E67C /* AppDelegate.swift */,
 				787980241E1FDDEC00E1E67C /* ViewController.swift */,
+				78F5A8E91E1FF5AE00A21BA8 /* QuizViewController.swift */,
 				787980261E1FDDEC00E1E67C /* Main.storyboard */,
 				787980291E1FDDEC00E1E67C /* Assets.xcassets */,
 				7879802B1E1FDDEC00E1E67C /* Info.plist */,
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F5A8EA1E1FF5AE00A21BA8 /* QuizViewController.swift in Sources */,
 				787980251E1FDDEC00E1E67C /* ViewController.swift in Sources */,
 				787980231E1FDDEC00E1E67C /* AppDelegate.swift in Sources */,
 			);
@@ -290,6 +294,7 @@
 				787980301E1FDDEC00E1E67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
