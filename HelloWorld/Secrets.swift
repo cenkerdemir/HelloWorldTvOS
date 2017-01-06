@@ -8,5 +8,5 @@
 
 import Foundation
 
-public let forecastKey = "nothing here"
+public let forecastKey = "nothing here anymore..."
 
