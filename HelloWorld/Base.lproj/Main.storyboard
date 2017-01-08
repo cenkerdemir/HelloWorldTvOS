@@ -32,30 +32,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-0n-36b">
-                                <rect key="frame" x="772" y="828" width="377" height="86"/>
+                                <rect key="frame" x="772" y="761" width="377" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Go To Quiz Game"/>
                                 <connections>
                                     <segue destination="iN0-bd-R6f" kind="show" id="Wh3-we-dK8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyx-LH-hVL">
-                                <rect key="frame" x="1401" y="828" width="419" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Check The Weather"/>
-                                <connections>
-                                    <segue destination="d4i-ZV-PfY" kind="show" id="8m4-5u-8Oy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gns-Gq-TtT">
-                                <rect key="frame" x="159" y="828" width="388" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="City Image List"/>
-                                <connections>
-                                    <segue destination="Yb7-Wp-smV" kind="show" id="XGA-eV-Ppg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Cenker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-xb-LX3">
@@ -73,6 +55,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gns-Gq-TtT">
+                                <rect key="frame" x="766" y="921" width="388" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Cities"/>
+                                <connections>
+                                    <segue destination="Yb7-Wp-smV" kind="show" id="XGA-eV-Ppg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -115,35 +106,33 @@
                                 <rect key="frame" x="1034" y="240" width="600" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Weather Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-Lt-Acp">
+                                <rect key="frame" x="1034" y="867" width="445" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kA-51-Lgo">
+                                <rect key="frame" x="1487" y="867" width="135" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="Xjt-Ii-YcO"/>
                     <connections>
                         <outlet property="cityImage" destination="yqZ-lW-RSp" id="tu0-GB-7Dn"/>
                         <outlet property="tableView" destination="Gwr-fh-X0d" id="ng9-aM-Kef"/>
+                        <outlet property="temperature" destination="2kA-51-Lgo" id="Gad-UN-Grd"/>
+                        <outlet property="weatherSummary" destination="tDB-Lt-Acp" id="rwc-GH-2hh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUs-95-KnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="3805"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="o8K-yl-x52">
-            <objects>
-                <viewController id="UBX-4f-KoR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5Ak-Nf-aII"/>
-                        <viewControllerLayoutGuide type="bottom" id="Myj-A5-1ln"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uo4-UT-nOB">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OmJ-vf-FsP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OhL-9Y-t7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2609" y="3805"/>
+            <point key="canvasLocation" x="2286" y="4139"/>
         </scene>
         <!--Quiz Game-->
         <scene sceneID="kqM-sz-oVI">
@@ -212,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pS5-gs-9Qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2371" y="3805"/>
+            <point key="canvasLocation" x="-1964" y="4139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NDb-Th-zH3">
@@ -230,25 +219,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLF-7O-lBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2371" y="1891"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oTf-hH-Dmj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4i-ZV-PfY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4R-ny-HoC">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="UBX-4f-KoR" kind="relationship" relationship="rootViewController" id="30J-eZ-XkG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxb-40-qym" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2609" y="1891"/>
+            <point key="canvasLocation" x="-1964" y="2560"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a3P-Ne-0VW">
@@ -266,7 +237,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsb-Er-ng5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="1891"/>
+            <point key="canvasLocation" x="2286" y="2560"/>
         </scene>
     </scenes>
 </document>
